@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/video_player"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quality_lo_140"
+        android:text="low-140p"
+        android:layout_below="@id/video_player"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quality_mi_244"
+        android:text="med-244p"
+        android:layout_below="@id/video_player"
+        android:layout_toEndOf="@id/quality_lo_140"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quality_mi_360"
+        android:text="mi-360p"
+        android:layout_below="@id/video_player"
+        android:layout_toEndOf="@id/quality_mi_244"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quality_hi_480p"
+        android:text="hi-480p"
+        android:layout_below="@id/quality_lo_140"
+       />
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quality_hi_720p"
+        android:text="high-720p"
+        android:layout_below="@id/quality_lo_140"
+        android:layout_toEndOf="@id/quality_hi_480p"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextBTn"
+        android:text="Video2"
+        android:layout_below="@id/quality_hi_720p"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/video3"
+        android:text="Video3"
+        android:layout_below="@id/quality_hi_720p"
+        android:layout_toEndOf="@id/nextBTn"/>
+
+</RelativeLayout>
